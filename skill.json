@@ -1,0 +1,42 @@
+{
+  "name": "genpark-agentic-bnpl-installment-credit-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous Buy-Now-Pay-Later (BNPL) installment schedule calculator and credit term optimizer for e-commerce checkout.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "bnpl",
+    "klarna",
+    "affirm",
+    "installments",
+    "checkout-optimizer"
+  ],
+  "inputs": {
+    "cart_total_usd": {
+      "type": "number"
+    },
+    "customer_credit_tier": {
+      "type": "string"
+    },
+    "preferred_term_months": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "plan_id": {
+      "type": "string"
+    },
+    "selected_plan_type": {
+      "type": "string"
+    },
+    "monthly_installment_usd": {
+      "type": "number"
+    },
+    "payment_schedule_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
